@@ -1,5 +1,12 @@
 {
   "dependencies": {
     "cypress": "^13.6.6"
+  },
+  "scripts":{
+    "runner": "cypress open",
+    "html-report": "cypress run --spec cypress/e2e/tests/place-order.cy.js --browser chrome --headed"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.8.2"
   }
 }
